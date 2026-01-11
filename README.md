@@ -97,15 +97,12 @@ In this project, I gained hands-on tech skills by implementing admin-level featu
 ## **Learnings from LST and SST**
 
 <!-- add your experiences over here -->
-LST (Life Skills Training) and SST workshops delivered targeted training on key personal, career, and office competencies. In LST, I developed skills in professional dialogue, appreciating gratitude, robust work principles, emotional awareness, and attentive listening, gaining insights into office conduct, online professionalism and manners, bargaining techniques, leading teams, persuading others, and delivering compelling presentations. They also steered me toward advancing my career, establishing clear objectives, and fostering a success-oriented outlook.
-SST honed my tech efficiency with AI, where I grasped core prompt engineering principles, mastered crafting high-impact prompts to streamline work tasks, and experimented with AI for innovative solutions. The workshops stressed scrutinizing AI-generated results and smart strategies for embedding AI ethically into routine processes.
----
+The LST (Life Skills Training) and SST sessions gave me practical training on important personal, job, and work skills. In LST, I learned how to communicate professionally, value gratitude, stick to strong work habits, understand emotions better, and listen actively. They showed me how to behave at work, handle online presence and manners, negotiate, lead people, influence others, and give good presentations. They also helped with growing my career, setting goals, and building a winning mindset.
+SST taught me to use AI for better productivity. I understood the basics of prompt engineering, learned to write prompts that make work faster, and tried using AI to solve problems creatively. The sessions focused on checking AI results carefully and adding AI to daily work in a safe way.
 
 ## **Community Services**
 
-During my internship period, I actively participated in community-oriented activities that focused on social responsibility, health awareness, environmental care, and support for underprivileged individuals. These activities helped me understand the importance of giving back to society and contributing positively beyond academic and professional growth
-
-During my internship period, I participated in multiple community-oriented activities .....<!-- add descreption in your own words -->
+During my internship period, I actively participated in community-oriented activities that focused on social responsibility, health awareness, environmental care, and support for underprivileged individuals. These activities helped me understand the importance of giving back to society and contributing positively beyond academic and professional growth.
 
 ### **Activities Involved**
 <!-- add the location where you given -->
@@ -130,8 +127,6 @@ During my internship period, I participated in multiple community-oriented activ
 
 <!-- add your photos below -->
 <!-- change url below with your image urls (inside  src='')-->
-
-- These are just placeholder (sample) images <!-- remove this line -->
 
 <div align="center">
 <img src="https://media.licdn.com/dms/image/v2/D561FAQEJNBia4UCa5w/feedshare-document-images_800/B56Zm5b6SJJkAg-/1/1759752731458?e=1766016000&v=beta&t=7GABy91-0FNbir386wPdJ-Grr385JzS3tR5LQIw1CWg" alt="Community Service Photo 1" width="30%">
