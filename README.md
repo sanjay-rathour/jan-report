@@ -18,31 +18,31 @@
 
 <h2 style = "color:#333;"> Student Details </h2>
 <div align = "left" style ="margin: 20px; font-size: 16px;">
-    <p><strong>Name:</strong> <!--- Add your name---> </p>
-    <p><strong>Email ID:</strong> <!--- Add your mail id ---> </p>
-    <p><strong>College Name:</strong> <!--- Add your college name---> </p>
-    <p><strong>Branch/Specialization :</strong> <!--- Add your branch name---> </p>
-    <p><strong>College ID:</strong> <!--- Add your college ID---> </p>
+    <p><strong>Name:</strong> Sanjay Rathour </p>
+    <p><strong>Email ID:</strong> sanjayrathourg3dsj@gmail.com </p>
+    <p><strong>College Name:</strong> Rd Engineering College Research Center Ghaziabad </p>
+    <p><strong>Branch/Specialization :</strong> Computer Science and Engineering </p>
+    <p><strong>College ID:</strong> 783 </p>
 </div>
 
 <hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
 <h2 style="color:#333;"> Course Details </h2>
 <div align="left" style="margin: 20px; font-size: 16px;">
-    <p><strong>Course Opted:</strong> <!--- Add your course name---> </p>
-    <p><strong>Instructor Name:</strong> <!--- Add your instructor name---> </p>
+    <p><strong>Course Opted:</strong> G3 DSA in java </p>
+    <p><strong>Instructor Name:</strong> Mr. Karthik Sir </p>
 </div>
 <div align="left" style="margin: 20px; font-size: 16px;">
-    <p><strong>Duration:</strong> <!--- Durations in months---> </p>
+    <p><strong>Duration:</strong> 6 months </p>
 
 <hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
 <h2 style="color:#333;"> Trainer Details </h2>
 <div align="left" style="margin: 20px; font-size: 16px;">
 
-<p><strong>Trainer Name:</strong> <!–– Add trainer name ––></p>
-<p><strong>Trainer Email ID:</strong> <!–– Add trainer email ––></p>
-<p><strong>Trainer Designation:</strong> <!–– Add designation along with company––></p>
+<p><strong>Trainer Name:</strong> Mr. Karthik Sir </p>
+<p><strong>Trainer Email ID:</strong> karthikofficial2712@gmail.com </p>
+<p><strong>Trainer Designation:</strong> Software tester at jio platforms limited </p>
 
 <hr style="border: 0; border-top: 1px solid #ccc; width: 80%;" />
 
@@ -63,53 +63,25 @@
 
 ## Overall Learning 
 
-> _This is a placeholder. Replace the text below with your personal learning summary._
-During this course, I learned the fundamentals of web development and project design.
-I gained hands-on experience with HTML, CSS, JavaScript and strengthened my skills in 
-problem-solving, teamwork, documentation, and delivering real-world project solutions.
+In this project, I gained hands-on tech skills by implementing admin-level features like issue verification, assignment, and status updates, while diving into authentication and authorization to secure operations and using filters with dashboards to manage huge volumes of reported civic issues efficiently. On the management front, I documented workflows clearly for smooth team integration, collaborated via version control and shared APIs, and truly appreciated how role-based access keeps platforms secure and collaborative without chaos
 
 
-<h2 style="color:#333;"> Projects Completed </h2>
+<h2 style="color:#333;"> Project Completed </h2>
 <div align="left" style="margin: 20px; font-size: 16px;">
 
-<p><strong><a href="#project1">Project 1:</a></strong> &lt;!-- Add project title → --&gt;</p>
-
-<p><strong><a href="#project2">Project 2:</a></strong> &lt;!-- Add project title → --&gt;</p>
-
-<p><strong><a href="#project3">Project 3:</a></strong> &lt;!-- Add project title → --&gt;</p>
-
-<p><em>(You can add more projects as needed)</em></p>
+<p><strong><a href="#project1">Project 1:</a></strong> Jan Report (A Civil Issue Reporting Platform) </p>
 
 </div>
 
 <!-- Project 1 -->
-<h3 id="project1">Project 1: <!-- Add Project Title --></h3>
+<h3 id="project1">Project 1: Jan Report (A Civil Issue Reporting Platform) </h3>
 <p>
-  This project involved designing and developing a basic functional module using the core concepts taught in the course.
-  It focused on understanding requirements, creating structured code, and implementing key features.
+  The aim of this project is to provide a simple and transparent platform for
+  citizens to report local issues, ensure proper verification, and enable authorities
+  to take timely action while allowing users to track the status of their complaints.
 </p>
 <p>
   <a href="https://github.com/sanjay-rathour/jan-report/blob/main/SURE%20Trust%20project%20document.pdf" target="_blank"><strong>→ View Full Project Report</strong></a>
-</p>
-
-<!-- Project 2 -->
-<h3 id="project2">Project 2: <!-- Add Project Title --></h3>
-<p>
-  This project expanded on intermediate concepts and required integrating multiple components to build a more complete solution.
-  It enhanced understanding of UI/UX design, modular coding, and testing.
-</p>
-<p>
-  <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
-</p>
-
-<!-- Project 3 -->
-<h3 id="project3">Project 3: <!-- Add Project Title --></h3>
-<p>
-  The final project showcased the practical application of all concepts learned throughout the course.  
-  It required planning, building, optimizing, and documenting a complete real-world project.
-</p>
-<p>
-  <a href="<!-- Add link to full report -->" target="_blank"><strong>→ View Full Project Report</strong></a>
 </p>
 
 <hr style="height:1px; border-top:1px solid #ccc; width:80%;" />
@@ -125,13 +97,13 @@ problem-solving, teamwork, documentation, and delivering real-world project solu
 ## **Learnings from LST and SST**
 
 <!-- add your experiences over here -->
-> _This is a placeholder. Replace the text below with your personal learning from LST and SST sessions summary._
-LST and SST sessions helped me....
+LST (Life Skills Training) and SST workshops delivered targeted training on key personal, career, and office competencies. In LST, I developed skills in professional dialogue, appreciating gratitude, robust work principles, emotional awareness, and attentive listening, gaining insights into office conduct, online professionalism and manners, bargaining techniques, leading teams, persuading others, and delivering compelling presentations. They also steered me toward advancing my career, establishing clear objectives, and fostering a success-oriented outlook.
+SST honed my tech efficiency with AI, where I grasped core prompt engineering principles, mastered crafting high-impact prompts to streamline work tasks, and experimented with AI for innovative solutions. The workshops stressed scrutinizing AI-generated results and smart strategies for embedding AI ethically into routine processes.
 ---
 
 ## **Community Services**
 
-<!-- add descreption in your own words -->
+During my internship period, I actively participated in community-oriented activities that focused on social responsibility, health awareness, environmental care, and support for underprivileged individuals. These activities helped me understand the importance of giving back to society and contributing positively beyond academic and professional growth
 
 During my internship period, I participated in multiple community-oriented activities .....<!-- add descreption in your own words -->
 
@@ -183,7 +155,8 @@ The internship certificate serves as an official acknowledgment of the successfu
 
 ## **Acknowledgments**
 
-<!-- you can add Acknowledgments over here in same syntax as below . eg trainer name , company name , role etc -->
+Prof. Radhakumari Challa, Executive Director & Founder of SURE Trust, for her visionary leadership, guidance, and continuous support in empowering learners through industry-relevant training and community-driven initiatives.
+SURE Trust / SURE ProEd for providing a structured learning environment, hands-on project exposure, and opportunities that effectively bridge academic learning with real-world industry requirements.
 
 - [Prof. Radhakumari Challa](https://www.linkedin.com/in/prof-radhakumari-challa-a3850219b) , Executive Director and Founder - [SURE Trust](https://www.suretrustforruralyouth.com/)
 
