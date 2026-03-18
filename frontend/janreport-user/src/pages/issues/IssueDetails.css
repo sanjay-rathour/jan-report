@@ -1,0 +1,201 @@
+/* =====================================================
+   ISSUE DETAILS – BASE WRAPPER
+===================================================== */
+.issue-details-wrapper {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Back link */
+.back-link {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.back-link:hover {
+  color: var(--color-accent-2);
+}
+
+/* =====================================================
+   DETAIL CARD (COMMON)
+===================================================== */
+.detail-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+html.dark .detail-card {
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+}
+
+.detail-card:hover {
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   COLUMN 1 – IMAGE + BASIC INFO
+===================================================== */
+.image-wrapper {
+  position: relative;
+  border-radius: 18px 18px 0 0;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Floating status badge */
+.status-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 2px 5px;
+  font-size: 0.55rem;
+  font-weight: 500;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Status colors */
+.status-badge.pending {
+  background: rgba(245, 158, 11, 0.15);
+  color: #b45309 !important; 
+}
+
+.status-badge.in\ progress {
+  background: rgba(14, 165, 233, 0.15);
+  color: #0369a1 !important;
+}
+
+.status-badge.resolved {
+  background: rgba(22, 163, 74, 0.15);
+  color: #166534 !important;
+}
+
+/* Meta block */
+.meta-block {
+  display: grid;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.meta-block svg {
+  margin-right: 6px;
+}
+
+/* =====================================================
+   FEEDBACK / RATING
+===================================================== */
+.feedback-section h6 {
+  font-size: 0.95rem;
+}
+
+.star-rating {
+  display: flex;
+  gap: 6px;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0;
+}
+
+.star-btn.active {
+  color: #f59e0b;
+}
+
+.star-btn:hover {
+  transform: scale(1.1);
+}
+
+/* =====================================================
+   COLUMN 2 – MAP
+===================================================== */
+.map-container {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--color-card-border);
+}
+
+/* =====================================================
+   COLUMN 3 – TRACKING TIMELINE
+===================================================== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.timeline-icon {
+  width: 14px;
+  height: 14px;
+  margin-top: 4px;
+  border-radius: 50%;
+  border: 2px solid var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-item.completed .timeline-icon {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.timeline-content h6 {
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.timeline-content p {
+  margin-bottom: 4px;
+}
+
+.date-text {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* =====================================================
+   ALERT STATE
+===================================================== */
+.alert-info {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-card-border);
+  color: var(--color-text-muted);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 991.98px) {
+  .image-wrapper img {
+    height: 200px;
+  }
+}

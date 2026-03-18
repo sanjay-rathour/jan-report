@@ -1,0 +1,225 @@
+/* ================= PAGE ================= */
+
+.chat-page-wrapper {
+  height: 100vh;
+  background: var(--color-bg-secondary);
+}
+
+/* ================= HEADER ================= */
+
+.chat-header {
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  background: var(--color-nav-bg);
+  border-bottom: 1px solid var(--color-nav-border);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+/* ================= LAYOUT ================= */
+
+.chat-layout {
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  gap: 24px;
+  height: calc(100vh - 120px);
+  padding: 16px 24px 24px;
+}
+
+/* ================= CHAT PANEL ================= */
+
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-card-bg);
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+/* ================= MESSAGES ================= */
+
+.chat-messages {
+  flex: 1;
+  padding: 26px;
+  background: var(--chat-bg);
+  overflow-y: auto;
+}
+
+/* ================= MESSAGE ROW ================= */
+
+.message-row {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.message-row.citizen {
+  justify-content: flex-end;
+}
+
+.message-row.admin,
+.message-row.system {
+  justify-content: flex-start;
+}
+
+/* ================= MESSAGE BUBBLES ================= */
+
+.message-bubble {
+  max-width: 60%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Citizen */
+.message-row.citizen .message-bubble {
+  background: linear-gradient(135deg, #4da3ff, #5fb0ff);
+  color: #ffffff;
+  border-bottom-right-radius: 6px;
+}
+
+/* Admin */
+.message-row.admin .message-bubble {
+  background: rgba(255,255,255,0.06);
+  color: var(--chat-text);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-bottom-left-radius: 6px;
+}
+
+/* System */
+.message-row.system .message-bubble {
+  background: rgba(255,255,255,0.04);
+  color: var(--chat-text);
+  font-style: italic;
+  border: 1px dashed rgba(255,255,255,0.12);
+}
+
+/* ================= TEXT ================= */
+
+.sender-name {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  opacity: 0.7;
+}
+
+.message-time {
+  display: block;
+  font-size: 11px;
+  margin-top: 6px;
+  opacity: 0.6;
+  text-align: right;
+}
+
+/* ================= CHAT FOOTER ================= */
+
+.chat-footer {
+  padding: 16px 18px;
+  border-top: 1px solid var(--color-card-border);
+  background: var(--color-card-bg);
+}
+
+.chat-footer form {
+  display: flex;
+  gap: 12px;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: var(--chat-input-bg);
+  color: var(--chat-text);
+}
+
+.chat-footer input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.chat-footer button {
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: none;
+  background: var(--color-accent);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= TRACKING PANEL ================= */
+
+.tracking-panel {
+  background: var(--color-card-bg);
+  border-radius: 18px;
+  padding: 20px;
+  overflow-y: auto;
+  backdrop-filter: blur(6px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .chat-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tracking-panel {
+    order: -1;
+  }
+}
+
+/* ================= LAYOUT ================= */
+
+.chat-layout {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 20px;
+  height: calc(100vh - 120px);
+}
+
+/* LEFT CHAT PANEL */
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-card-bg);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* RIGHT TRACKING PANEL */
+.tracking-panel {
+  background: var(--color-card-bg);
+  border-radius: 14px;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .chat-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tracking-panel {
+    order: -1;
+  }
+}

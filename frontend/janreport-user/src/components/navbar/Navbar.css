@@ -1,0 +1,43 @@
+/* Custom logo sizing */
+.nav-logo {
+  height: 35px; /* Adjust as needed */
+  width: auto;
+}
+
+/* * 1. Define custom theme for Navbar Links and Toggler.
+ * This ensures that links and icons within the navbar 
+ * use the correct text color defined by the global theme variables.
+ */
+.navbar-theme .nav-link,
+.navbar-theme .navbar-toggler,
+.navbar-theme .navbar-toggler i {
+  color: var(--color-text) !important;
+  font-weight: 500;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  transition: color var(--transition-speed);
+}
+
+/* Hover/Focus states using your accent color */
+.navbar-theme .nav-link:hover,
+.navbar-theme .nav-link:focus {
+  color: var(--color-accent) !important;
+}
+
+/* PROFESSIONAL FIX: Active NavLink uses the Primary Blue Accent */
+.navbar-theme .nav-link.active {
+  color: var(--color-accent) !important; 
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-accent); /* Underline uses Blue Accent */
+}
+
+/* Adjust Toggler Icon Color */
+.navbar-theme .navbar-toggler {
+  border: 1px solid var(--color-nav-border) !important;
+  font-size: 1.5rem; /* size of the 'list' icon */
+}
+
+/* Toggler icon color when collapsed - ensures it's visible in both themes */
+.navbar-theme .navbar-toggler-icon {
+  filter: var(--color-text); /* Use a technique to color the default icon if you used the default icon */
+}

@@ -1,0 +1,94 @@
+/* ================= TRACKING CARD ================= */
+
+.tracking-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+/* ================= TITLE ================= */
+
+.tracking-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  color: var(--color-text);
+}
+
+/* ================= LIST ================= */
+
+.tracking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ================= ITEM ================= */
+
+.tracking-item {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 22px;
+  position: relative;
+}
+
+.tracking-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Vertical line */
+.tracking-item::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 18px;
+  width: 1px;
+  height: 100%;
+  background: rgba(255,255,255,0.15);
+}
+
+.tracking-item:last-child::before {
+  display: none;
+}
+
+/* ================= DOT ================= */
+
+.tracking-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4da3ff;
+  margin-top: 4px;
+}
+
+.tracking-item.pending .tracking-dot {
+  background: rgba(255,255,255,0.3);
+}
+
+/* ================= CONTENT ================= */
+
+.tracking-content {
+  flex: 1;
+}
+
+.tracking-step {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tracking-desc {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.tracking-date {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 6px;
+}

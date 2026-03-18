@@ -1,0 +1,25 @@
+.jr-footer {
+  background: var(--color-card-bg);
+  border-top: 1px solid var(--color-card-border);
+  color: var(--color-text);
+  margin-top: auto;
+  transition: background var(--transition-speed), color var(--transition-speed);
+}
+
+.jr-footer .footer-links a {
+  margin: 0 12px;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.jr-footer .footer-links a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.footer-divider {
+  border-color: var(--color-card-border);
+  margin: 12px auto;
+  width: 60%;
+}

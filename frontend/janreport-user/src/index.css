@@ -1,0 +1,445 @@
+/* =====================================================
+   FONT & TYPOGRAPHY (FIXED ONCE, USED EVERYWHERE)
+   ===================================================== */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+/* =====================================================
+   THEME TOKENS – LIGHT MODE
+   ===================================================== */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f6f8fc;
+
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+
+  --color-nav-bg: #ffffff;
+  --color-nav-border: rgba(0, 0, 0, 0.08);
+
+  --color-card-bg: #ffffff;
+  --color-card-border: rgba(15, 23, 42, 0.12);
+
+  --color-input-bg: #ffffff;
+
+  --color-accent: #2563eb;     /* Govt blue */
+  --color-accent-2: #f97316;   /* Action orange */
+
+  --transition-speed: 0.25s;
+
+--chat-bg: #f5f7fa;
+  
+--chat-admin-bg: #ffffff;
+ 
+--chat-system-bg: #eef2f6;
+  
+--chat-text: #111;
+
+}
+
+/* =====================================================
+   THEME TOKENS – DARK MODE
+   ===================================================== */
+html.dark {
+  --color-bg: #020915;
+  --color-bg-secondary: #0b1530;
+
+  --color-text: #f8fafc;
+  --color-text-muted: #c1c7d0;
+
+  --color-nav-bg: #04041b;
+  --color-nav-border: rgba(255, 255, 255, 0.14);
+
+  --color-card-bg: #10192a;
+  --color-card-border: rgba(255, 255, 255, 0.14);
+
+  --color-input-bg: #0e1a34;
+
+  --color-accent: #4ea8ff;
+  --color-accent-2: #ff8a3d;
+
+  --chat-bg: #020a1c;
+  
+  --chat-admin-bg: #08142f;
+  
+  --chat-system-bg: #0e1b3d;
+ 
+  --chat-text: #dbe7ff;
+
+
+
+
+}
+
+/* =====================================================
+   BASE BACKGROUND & TEXT
+   ===================================================== */
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background var(--transition-speed),
+              color var(--transition-speed);
+}
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+.navbar {
+  background-color: var(--color-nav-bg) !important;
+  border-bottom: 1px solid var(--color-nav-border);
+}
+
+/* =====================================================
+   LINKS
+   ===================================================== */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: var(--color-accent-2);
+}
+
+/* =====================================================
+   GRADIENT HEADINGS (FIXED ISSUE)
+   ===================================================== */
+.hero-title,
+.section-heading {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed,
+    rgb(243, 9, 169),
+    #fa09ea
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-title {
+  display: inline-block;
+ background: linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed,
+    rgb(243, 9, 169)
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+/* =====================================================
+   MUTED TEXT (ACCESSIBLE)
+   ===================================================== */
+.text-muted,
+.form-text {
+  color: var(--color-text-muted) !important;
+  opacity: 1;
+}
+
+/* =====================================================
+   CARDS (PREMIUM & CLEAN)
+   ===================================================== */
+.card,
+.landing-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 1.25rem;
+  color: var(--color-text);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.landing-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.14);
+}
+
+html.dark .landing-card:hover {
+  box-shadow: 0 16px 36px rgba(255, 255, 255, 0.08);
+}
+
+/* =====================================================
+   ICON PILLS
+   ===================================================== */
+.icon-pill {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+.btn-primary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-2);
+  border-color: var(--color-accent-2);
+}
+
+.btn-outline-primary {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* Ghost button (theme toggle) */
+.btn-ghost {
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  padding: 0.35rem;
+  cursor: pointer;
+}
+
+.btn-ghost:hover {
+  color: var(--color-accent-2);
+}
+
+/* =====================================================
+   FORMS (READABLE & MODERN)
+   ===================================================== */
+.form-label {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.form-control,
+.form-select {
+  background-color: var(--color-input-bg);
+  color: var(--color-text);
+  border-radius: 0.6rem;
+  border: 1px solid var(--color-card-border);
+}
+
+.form-control::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.2rem rgba(78, 168, 255, 0.25);
+}
+
+/* =====================================================
+   AUTH / FORM PAGE BACKGROUND
+   ===================================================== */
+
+/* ========== FORM PAGE (LIGHT THEME) ========== */
+.auth-page {
+  min-height: calc(100vh - 80px);
+  padding: 3.5rem 1rem;
+  background: linear-gradient(
+    to bottom,
+    #f4f7fb,
+    #e9eef5
+  );
+  display: flex;
+  justify-content: center;
+}
+
+/* Card */
+.auth-page .card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+.auth-page h4 {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Subtitle */
+.auth-page h4 + small {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* Labels */
+.auth-page .form-label {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+/* Inputs */
+.auth-page .form-control,
+.auth-page .form-select,
+.auth-page textarea {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  border-radius: 10px;
+}
+
+/* Placeholder */
+.auth-page ::placeholder {
+  color: #64748b;
+}
+
+/* Focus */
+.auth-page .form-control:focus,
+.auth-page .form-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* ========== FORM PAGE (DARK THEME) ========== */
+html.dark .auth-page {
+  background: linear-gradient(
+    to bottom,
+    #020915,
+    #071a33
+  );
+}
+
+html.dark .auth-page .card {
+  background: linear-gradient(
+    180deg,
+    #0f1e3a,
+    #031338
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+html.dark .auth-page h4 {
+  color: #ffffff;
+}
+
+html.dark .auth-page h4 + small {
+  color: #c7d2fe;
+}
+
+html.dark .auth-page .form-label {
+  color: #e0e7ff;
+}
+
+html.dark .auth-page .form-control,
+html.dark .auth-page .form-select,
+html.dark .auth-page textarea {
+  background-color: #040f23 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+html.dark select option {
+  background-color: #0b1730 !important;
+  color: #ffffff !important;
+}
+
+/* Hovered option */
+html.dark select option:hover {
+  background-color: #1e3a8a !important;
+}
+
+/* Selected option */
+html.dark select option:checked {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+html.dark .auth-page ::placeholder {
+  color: #6370b1;
+}
+
+html.dark .auth-page .form-control:focus,
+html.dark .auth-page .form-select:focus {
+  border-color: #4ea8ff;
+  box-shadow: 0 0 0 2px rgba(78, 168, 255, 0.25);
+}
+
+html.dark .form-select {
+  color-scheme: dark;
+}
+
+.auth-page .btn-primary {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #4ea8ff
+  );
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0.6rem 1.6rem;
+}
+
+.auth-page .btn-primary:hover {
+  opacity: 0.95;
+}
+
+
+/* =====================================================
+   LANDING PAGE LAYOUT
+   ===================================================== */
+.landing-section {
+  padding: 4.5rem 0;
+}
+
+.hero-subtitle {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  max-width: 680px;
+}
+
+/* =====================================================
+   ISSUE IMAGE CARDS
+   ===================================================== */
+.issue-card-image {
+  height: 190px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.issue-card:hover .issue-card-image {
+  transform: scale(1.06);
+}
+
+/* =====================================================
+   RESPONSIVE TUNING
+   ===================================================== */
+@media (max-width: 767.98px) {
+  .landing-section {
+    padding: 3.25rem 0;
+  }
+
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+}
